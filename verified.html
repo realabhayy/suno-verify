@@ -1,61 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Email Verified</title>
   <style>
     body {
-      background: #f0f4f8;
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
       margin: 0;
-    }
-    .card {
-      background: white;
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(135deg, #42a5f5, #7e57c2);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       text-align: center;
+      padding: 20px;
     }
-    .checkmark {
-      font-size: 60px;
-      color: #4caf50;
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 20px;
+      max-width: 400px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
     h1 {
-      margin: 20px 0 10px;
-      color: #333;
+      font-size: 28px;
+      margin-bottom: 10px;
     }
     p {
-      color: #555;
+      font-size: 16px;
       margin-bottom: 20px;
     }
     .button {
-      background: #1976d2;
-      color: white;
+      display: inline-block;
       padding: 12px 24px;
-      border: none;
+      background-color: #ffffff;
+      color: #1976d2;
       border-radius: 8px;
-      cursor: pointer;
-      font-size: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
     }
     .button:hover {
-      background: #135ba1;
+      background-color: #f0f0f0;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <div class="checkmark">✔</div>
-    <h1>Email Verified!</h1>
-    <p>You can now return to the app and log in.</p>
-    <button class="button" onclick="window.location.href='myapp://home'">
-      Open App
-    </button>
+  <div class="container">
+    <h1>Email Verified Successfully 🎉</h1>
+    <p>You can now return to the <strong>Suno</strong> app and start using your account.</p>
+    <a href="#" class="button">Back to App</a>
   </div>
 </body>
 </html>
