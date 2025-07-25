@@ -3,56 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Email Verified</title>
+  <title>Email Verified - Suno</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      background: linear-gradient(135deg, #42a5f5, #7e57c2);
-      color: white;
+      padding: 0;
+      background: linear-gradient(135deg, #42a5f5, #ab47bc);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
       text-align: center;
-      padding: 20px;
     }
     .container {
       background: rgba(255, 255, 255, 0.1);
-      padding: 40px;
-      border-radius: 20px;
+      border-radius: 16px;
+      padding: 40px 20px;
       max-width: 400px;
-      backdrop-filter: blur(8px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      width: 90%;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
     }
     h1 {
       font-size: 28px;
-      margin-bottom: 10px;
+      margin-bottom: 16px;
     }
     p {
       font-size: 16px;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
+      line-height: 1.4;
     }
     .button {
       display: inline-block;
       padding: 12px 24px;
-      background-color: #ffffff;
-      color: #1976d2;
+      background: #fff;
+      color: #42a5f5;
+      font-weight: bold;
       border-radius: 8px;
       text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
+      transition: background 0.3s, color 0.3s;
     }
     .button:hover {
-      background-color: #f0f0f0;
+      background: #42a5f5;
+      color: #fff;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Email Verified Successfully 🎉</h1>
-    <p>You can now return to the <strong>Suno</strong> app and start using your account.</p>
-    <a href="#" class="button">Back to App</a>
+    <h1>Email Verified 🎉</h1>
+    <p>Your email has been successfully verified. You can now go back to the Suno app and log in.</p>
+    <a href="#" class="button" onclick="window.close()">Back to App</a>
   </div>
 </body>
 </html>
